@@ -27,7 +27,7 @@ def start(bot, update):
 start_handler = ConversationHandler(
     entry_points = [CommandHandler('start', start)],
     states={},
-    fallbacks=[CommandHandler('cancelar', setup_cancelar)],
+    fallbacks=[],
     per_chat = True
     )
 
