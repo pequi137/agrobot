@@ -1,1 +1,1 @@
-worker: python runAtrix.py 
+worker: python run.py 
