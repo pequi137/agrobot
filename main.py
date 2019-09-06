@@ -20,6 +20,7 @@ def start(bot, update):
 	msg += "Meu nome é {}!\n".format(bot.first_name)
 	msg += "Estou aqui para ajudar com os negócios.\n"
 	msg += "Use o comando /ajuda para exibir a lista de comandos."
+	print(update.message.chat_id)
 	update.message.reply_text(msg) #Envia a mensagem para o mesmo chat de onde foi contatado. 
 
 
