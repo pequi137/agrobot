@@ -17,9 +17,9 @@ dispatcher = updater.dispatcher # O Updater recupera informações e o Dispatche
 def start(bot, update):
 	bot = bot.get_me()
 	msg = "Olá!\n"
-    msg += "Meu nome é {0}!\n".format(me.first_name)
-    msg += "Estou aqui para ajudar com os negócios.\n"
-    msg += "Use o comando /ajuda para exibir a lista de comandos."
+    msg.join("Meu nome é {}!\n".format(me.first_name))
+    msg.join("Estou aqui para ajudar com os negócios.\n")
+    msg.join("Use o comando /ajuda para exibir a lista de comandos.")
     bot.send_message(chat_id=update.message.chat_id, text=msg) #Envia a mensagem para o mesmo chat de onde foi contatado. 
 
 start_handler = ConversationHandler(
