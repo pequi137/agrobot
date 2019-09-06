@@ -11,7 +11,7 @@ support_chat_id = int(os.environ['SUP_CHAT_ID']) # ID do chat do grupo de suport
 logging.basicConfig(format='%(asctime)s | %(name)s | %(levelname)s | %(message)s',
                     datefmt='%d/%m/%Y, %H:%M:%S', level=logging.DEBUG)
 
-updater = Updater(token=token) # Conecta à API do Telegram
+updater = Updater(token=api_token) # Conecta à API do Telegram
 dispatcher = updater.dispatcher # O Updater recupera informações e o Dispatcher conecta comandos às funções
 
 def start(bot, update):
