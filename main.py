@@ -18,8 +18,8 @@ def start(bot, update):
 	bot = bot.get_me()
 	msg = "Olá!\n"
 	msg += "Meu nome é {}!\n".format(bot.first_name)
-	msg += join("Estou aqui para ajudar com os negócios.\n")
-	msg += join("Use o comando /ajuda para exibir a lista de comandos.")
+	msg += "Estou aqui para ajudar com os negócios.\n"
+	msg += "Use o comando /ajuda para exibir a lista de comandos."
 	update.message.reply_text(msg) #Envia a mensagem para o mesmo chat de onde foi contatado. 
 
 
