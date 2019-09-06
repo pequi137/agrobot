@@ -22,11 +22,11 @@ def start(bot, update):
 	msg.join("Use o comando /ajuda para exibir a lista de comandos.")
 	bot.send_message(chat_id=update.message.chat_id, text=msg) #Envia a mensagem para o mesmo chat de onde foi contatado. 
 
+
+
 start_handler = ConversationHandler(
     entry_points = [CommandHandler('start', start)],
-    states={
-        START_RESPOSTA: [CallbackQueryHandler(setup_resposta)],
-    },
+    states={},
     fallbacks=[CommandHandler('cancelar', setup_cancelar)],
     per_chat = True
     )
